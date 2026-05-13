@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: KrishXStarMusicBot
+    env: python
+    plan: free
+
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+
+    envVars:
+      - key: BOT_NAME
+        value: "KRISH X STAR CODER"
+
+      - key: BOT_LINK
+        value: "https://t.me/KRISH_HACKER_OP"
+
+      - key: UPDATES_CHANNEL
+        value: "https://t.me/KRISH_HACKER_OP"
+
+      - key: SUPPORT_GROUP
+        value: "https://t.me/KRISH_HACKER_OP"
+
+      - key: SESSION_NAME
+        value: "KrishXStarMusic"
+
+      - key: START_ANIMATION
+        value: https://telegra.ph/file/1a3c152717eb9d2e94dc2.mp4
+
+      - key: PING_IMG_URL
+        value: https://files.catbox.moe/ddzvc0.jpg
+
+      - key: PYTHON_VERSION
+        value: 3.10.13
+
+      - key: PORT
+        value: "10000"
+
+      - key: MAX_DURATION_SECONDS
+        value: "1800"
+
+      - key: QUEUE_LIMIT
+        value: "20"
+
+      - key: COOLDOWN
+        value: "10"
